@@ -84,7 +84,7 @@ export default function App() {
     const loader = new GLTFLoader();
     loader.registerPlugin(new VRMLoaderPlugin());
     loader.load(
-      '/assets/models/Sumisumi_VRM.vrm',
+      __APP_MODEL_PATH__,
       (gltf) => {
         const vrm = gltf.userData.vrm;
         scene.add(vrm.scene);
