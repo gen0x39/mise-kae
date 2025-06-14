@@ -16,7 +16,7 @@ async function main() {
     // VRMビューアーの初期化
     const vrmViewer = new VRMViewer(
       {
-        modelPath: '/assets/models/Sumisumi_VRM.vrm',
+        modelPath: __APP_MODEL_PATH__,
         onLoad: (vrm) => {
           console.log('VRMモデルの読み込みが完了しました');
 
